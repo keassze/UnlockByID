@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UnLockByIDUtils/UnlockByIDUtils.h"
 
 @interface AppDelegate ()
 
