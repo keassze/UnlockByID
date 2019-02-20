@@ -26,6 +26,9 @@ typedef NS_ENUM(NSInteger, UnlockByIDUtilsState) {
     UnlockByIDUtilsBiometryNotEnrolled, // 没有录入 TouchID|FaceID
     UnlockByIDUtilsAppCancel,           // 取消ID授权(后台挂起)
     UnlockByIDUtilsInvalidContext,      // 取消ID授权(Context失效)
+    UnlockByIDUtilsBiometryNotAvailable,//
+    UnlockByIDUtilsBiometryLockout,
+    UnlockByIDUtilsNotInteractive,
 };
 
 typedef void(^UnlockByIDUtilsCallBack)(BOOL isSuc,UnlockByIDUtilsState state);
@@ -36,26 +39,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shareManager;
 
-
-/**
- 生物类ID验证（默认不允许使用密码进行操作）
-
- @param reason 底部描述（文本：验证+支持的ID+以进行reason）
- @param result 验证结果回调
- */
-- (void)showVerityWithReason:(NSString *)reason
-                      result:(UnlockByIDUtilsCallBack)result;
-
 /**
  生物类ID验证
 
- @param title 底部文本（用于在此验证）
  @param allowPassword 是否允许密码通过验证
  @param result 验证结果回调
  */
-- (void)showVerityWithTitle:(NSString *)title
-              allowPassword:(BOOL)allowPassword
-                     result:(UnlockByIDUtilsCallBack)result;
+- (void)showVerityWithAllowPassword:(BOOL)allowPassword
+                             result:(UnlockByIDUtilsCallBack)result;
 
 @end
 

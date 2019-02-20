@@ -29,7 +29,7 @@
 
 - (void)checkID
 {
-    [[UnlockByIDUtils shareManager] showVerityWithTitle:@"再试一次" allowPassword:YES result:^(BOOL isSuc, UnlockByIDUtilsState state) {
+    [[UnlockByIDUtils shareManager] showVerityWithAllowPassword:YES result:^(BOOL isSuc, UnlockByIDUtilsState state) {
         NSLog(@"%d",state);
     }];
 }
