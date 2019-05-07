@@ -15,8 +15,8 @@
 		8859238121CB1F8E00D0F509 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8859238021CB1F8E00D0F509 /* main.m */; };
 		8859238B21CB1F8E00D0F509 /* UnlockByIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8859238A21CB1F8E00D0F509 /* UnlockByIDTests.m */; };
 		8859239621CB1F8E00D0F509 /* UnlockByIDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8859239521CB1F8E00D0F509 /* UnlockByIDUITests.m */; };
-		885923A621CB201800D0F509 /* UnlockByIDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 885923A521CB201800D0F509 /* UnlockByIDUtils.m */; };
 		885923AB21CB209E00D0F509 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885923AA21CB209E00D0F509 /* LocalAuthentication.framework */; };
+		8889F0B4228131390078D570 /* UnlockByIDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8889F0B2228131390078D570 /* UnlockByIDUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		8859239121CB1F8E00D0F509 /* UnlockByIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnlockByIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8859239521CB1F8E00D0F509 /* UnlockByIDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnlockByIDUITests.m; sourceTree = "<group>"; };
 		8859239721CB1F8E00D0F509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		885923A421CB201800D0F509 /* UnlockByIDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnlockByIDUtils.h; sourceTree = "<group>"; };
-		885923A521CB201800D0F509 /* UnlockByIDUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnlockByIDUtils.m; sourceTree = "<group>"; };
 		885923A821CB207C00D0F509 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		885923AA21CB209E00D0F509 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		8889F0B2228131390078D570 /* UnlockByIDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockByIDUtils.m; sourceTree = "<group>"; };
+		8889F0B3228131390078D570 /* UnlockByIDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockByIDUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		8859237021CB1F8D00D0F509 /* UnlockByID */ = {
 			isa = PBXGroup;
 			children = (
-				885923A321CB1FE800D0F509 /* UnLockByIDUtils */,
+				8889F0B1228131390078D570 /* UnLockByIDUtils */,
 				8859237121CB1F8D00D0F509 /* AppDelegate.h */,
 				8859237221CB1F8D00D0F509 /* AppDelegate.m */,
 				8859237421CB1F8D00D0F509 /* ViewController.h */,
@@ -141,15 +141,6 @@
 			path = UnlockByIDUITests;
 			sourceTree = "<group>";
 		};
-		885923A321CB1FE800D0F509 /* UnLockByIDUtils */ = {
-			isa = PBXGroup;
-			children = (
-				885923A421CB201800D0F509 /* UnlockByIDUtils.h */,
-				885923A521CB201800D0F509 /* UnlockByIDUtils.m */,
-			);
-			path = UnLockByIDUtils;
-			sourceTree = "<group>";
-		};
 		885923A721CB207C00D0F509 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +148,15 @@
 				885923A821CB207C00D0F509 /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8889F0B1228131390078D570 /* UnLockByIDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8889F0B3228131390078D570 /* UnlockByIDUtils.h */,
+				8889F0B2228131390078D570 /* UnlockByIDUtils.m */,
+			);
+			path = UnLockByIDUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8859237621CB1F8D00D0F509 /* ViewController.m in Sources */,
-				885923A621CB201800D0F509 /* UnlockByIDUtils.m in Sources */,
+				8889F0B4228131390078D570 /* UnlockByIDUtils.m in Sources */,
 				8859238121CB1F8E00D0F509 /* main.m in Sources */,
 				8859237321CB1F8D00D0F509 /* AppDelegate.m in Sources */,
 			);

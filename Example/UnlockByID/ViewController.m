@@ -30,7 +30,7 @@
 - (void)checkID
 {
     [[UnlockByIDUtils shareManager] showVerityWithAllowPassword:YES result:^(BOOL isSuc, UnlockByIDUtilsState state) {
-        NSLog(@"%d",state);
+        NSLog(@"%ld",(long)state);
     }];
 }
 
