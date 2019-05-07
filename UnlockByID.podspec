@@ -6,7 +6,8 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Songze He' => 'keassze@163.com' }
   spec.summary      = '用于面部、指纹解锁的封装类'
   spec.source       = { :git => 'https://github.com/keassze/UnlockByID.git', :tag => spec.version.to_s }
-  spec.source_files = 'Sources/Classes/**'
+  spec.source_files = 'Sources/Classes/**/*'
+  spec.ios.deployment_target = '7.0'
   # 依赖的第三方框架
   # spec.framework    = 'SystemConfiguration'
 end
